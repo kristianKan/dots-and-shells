@@ -1,14 +1,22 @@
 " Insetall plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'airblade/vim-gitgutter'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'junegunn/fzf'
-Plug 'leafgarland/typescript-vim'
-Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
-Plug 'tpope/vim-surround'
+" Syntax for various languages
+Plug 'sheerun/vim-polyglot'
+" Async lint engine
 Plug 'w0rp/ale'
+" Intelligent JS support
+Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
+" Git diff in vim gutter
+Plug 'airblade/vim-gitgutter'
+" Consisten styles across different editors
+Plug 'editorconfig/editorconfig-vim'
+" All about parentheses, quotes, etc
+Plug 'tpope/vim-surround'
+" A general purpose fuzzy finder
+Plug 'junegunn/fzf'
+" Intelligent autocomplete
+Plug 'zxqfl/tabnine-vim'
 
 call plug#end()
 
